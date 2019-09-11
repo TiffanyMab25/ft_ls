@@ -1,29 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   opendir.c                                          :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tiffany_mab_ <marvin@42.fr>                +#+  +:+       +#+        */
+/*   By: tmabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/10 14:57:19 by tiffany_m         #+#    #+#             */
-/*   Updated: 2019/09/11 13:46:39 by tmabunda         ###   ########.fr       */
+/*   Created: 2019/09/11 12:59:41 by tmabunda          #+#    #+#             */
+/*   Updated: 2019/09/11 13:32:24 by tmabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_ls.h"
 
-
-void	ft_opendir(char	*path)
+int main(int ac, char **av)
 {
-	DIR				*dir;
-	struct	dirent	*dir_to;
+	int i = 1;
 
-	dir = opendir(path);
-	while ((dir_to = readdir(dir)) != NULL)
+	if(ac == 2)
+	while (av[i])
 	{
-		printf("%s\n", dir_to->d_name);
-	}
-	closedir(dir);
+		ft_opendir(av[i]);
+		printf("\n\n");
+		i++;
+	}		
 }
-
-
