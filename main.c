@@ -6,7 +6,7 @@
 /*   By: tmabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/11 12:59:41 by tmabunda          #+#    #+#             */
-/*   Updated: 2019/09/11 14:33:35 by tmabunda         ###   ########.fr       */
+/*   Updated: 2019/09/12 15:08:52 by tmabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ int main(int ac, char **av)
 	if(ac == 2)
 	while (av[i])
 	{
+		dir_file(av[i]);
 		ft_opendir(av[i]);
 		printf("\n\n");
 		i++;
