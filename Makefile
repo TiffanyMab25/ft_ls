@@ -6,7 +6,7 @@
 #    By: tiffany_mab_ <marvin@42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/10 14:41:46 by tiffany_m         #+#    #+#              #
-#    Updated: 2019/09/11 13:19:39 by tmabunda         ###   ########.fr        #
+#    Updated: 2019/09/12 14:23:48 by tmabunda         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,9 @@ CC = gcc
 
 CFLAGS = -Wall -Werror -Wextra
 
-SRC =
+SRC =	dir_file.c\
+		ft_checkfile.c\
+		opendir.c\
 
 OBJ =	$(SRC:.c=.o)
 
