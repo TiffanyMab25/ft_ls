@@ -6,7 +6,7 @@
 /*   By: tmabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/11 13:12:34 by tmabunda          #+#    #+#             */
-/*   Updated: 2019/09/12 15:04:08 by tmabunda         ###   ########.fr       */
+/*   Updated: 2019/09/16 16:00:20 by tmabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	checkflag(char **str)
 }
 
 /** The purpose of this function is to check if theres '-'
- * the reason we initialize i to 1 is that w ewant to sart checking from argument 1
+ * the reason we initialize i to 1 is that we want to start checking from argument 1
  * the while statement checks if the string isnt empty and breaks
  * the if statments tells us that every first argument character should be '-'
  *  if its true you return 1 and if not you return 0 
