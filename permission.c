@@ -6,7 +6,7 @@
 /*   By: tmabunda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/16 11:33:20 by tmabunda          #+#    #+#             */
-/*   Updated: 2019/09/16 15:40:10 by tmabunda         ###   ########.fr       */
+/*   Updated: 2019/09/25 07:51:36 by tmabunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,15 +27,16 @@ void	ft_permissions(struct stat buf)
 	ft_putstr( (buf.st_mode & S_IXOTH) ? "x" : "-"); /* Others besides the group/user can execute the directory/ its a file */ 
 }
 
-int main(int ac, char **av)
-{
-	int i = 1;
-	struct stat buf;
-
-	if(ac == 2)
-	{
-		stat(av[1], &buf);
-		ft_permissions(buf);
-	}
+/**int main(int ac, char **av)
+*{
+*	int i = 1;
+*	struct stat buf;
+*
+*	if(ac == 2)
+*	{
+*		stat(av[1], &buf);
+*		ft_permissions(buf);
+*	}
 return(0);
 }
+*/
